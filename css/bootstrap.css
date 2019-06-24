@@ -4050,7 +4050,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 55px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4159,7 +4159,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
+  height: 55px;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;

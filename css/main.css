@@ -464,9 +464,9 @@ footer .theme-by {
 }
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
-  padding: 100px 0;
-  color: #FFF;
-  text-shadow: 1px 1px 3px #000;
+  padding: 00px 0;
+  color: #000;
+  text-shadow: 2px 2px 4px #666;
 }
 .intro-header .page-heading h1 {
   margin-top: 0;
@@ -520,10 +520,10 @@ footer .theme-by {
   }
   .intro-header.big-img .page-heading,
   .intro-header.big-img .post-heading  {
-    padding: 150px 0;
+    padding: 90px 0;
   }
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 55px;
   }
   .intro-header .post-heading h1 {
     font-size: 50px;
