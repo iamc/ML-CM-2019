@@ -14,20 +14,19 @@ description: Summer Course
 #url: "https://example.com"
 
 # baseurl should be an empty string
-baseurl: "/ML-CM-2019"
+#baseurl: "/ML-CM-2019"
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About: "about"
   Speakers: "speakers"
   Organizers: "organizers"
   News: "news"
   Resources:
     - Schedule: ""
-    - Venue: ""
     - Material: ""
+    - Venue: ""
     - Registration: ""
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -37,7 +36,6 @@ avatar: "/img/avatar-icon.png"
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
 # title-img: /path/to/image
-title-img: "/img/logo.png"
 
 # --- Background colour/image options --- #
 
@@ -56,6 +54,7 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
+# navbar-img: "/img/bgimage.png"
 # navbar-img: "/img/bgimage.png"
 # footer-img: "/img/bgimage.png"
 # page-img: "/img/bgimage.png"
@@ -98,7 +97,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "dipc.ehu.es"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "iamc.eu/ML-CM-2019"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -154,6 +153,12 @@ excerpt_length: 50
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
 title-separator: "-"
+
+# Blog entries under news and not in main page
+paginate_path: "/news/page:num/"
+
+# Tab name to site name
+use-site-title: true
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
