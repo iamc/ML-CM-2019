@@ -14,7 +14,7 @@ description: Summer Course
 #url: "https://example.com"
 
 # baseurl should be an empty string
-#baseurl: "/ML-CM-2019"
+baseurl: "/ML-CM-2019"
 
 # --- Navigation bar options --- #
 
