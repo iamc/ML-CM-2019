@@ -4,6 +4,14 @@ layout: null
 
 @import url("pygment_highlights.css");
 
+/* --- inigo ---*/
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
 /* --- General --- */
 
 body {
