@@ -1,14 +1,16 @@
 ---
 layout: page
-title: Machine Learning in Condensed Matter Physics
-subtitle: Donostia - San Sebastian, 26-28 August 2019
-bigimg: "img/banner.png"
+title: About me
+subtitle: Why you'd want to go on a date with me
 ---
 
-The [Donostia International Physics Center (DIPC)](http://dipc.ehu.es) is organizing the Machine Learning in Condensed Matter Physics course on 26-28 August 2019. This 3 days course will cover the role and application of machine learning in condensed matter physics. In particular we will study machine learning techniques for studying classical and quantum many-body problems encountered in condensed matter, quantum information, and related fields of physics. 
+My name is Inigo Montoya. I have the following qualities:
 
-Lectures, given by world leaders researchers on the topic, will emphasize relations between statistical physics and machine learning and will include slides, blackboard and hands-on code demonstrations using Julia and Python together with TensorFlow and PyTorch libraries. 
+- I rock a great mustache
+- I'm extremely loyal to my family
 
-Attendants are expected to bring their own laptops with a pre-configured environment (specific instructions will be given).
+What else do you need?
 
-This course is a satellite event to the [Topological Matter School 2019](https://tms-dipc.org/), due on August 19-23 2019, and also organized by the DIPC under the [University Of the Basque Country Summer Courses](https://www.uik.eus/en).
+### my history
+
+To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
