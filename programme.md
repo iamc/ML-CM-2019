@@ -14,6 +14,8 @@ subtitle: Schedule and Materials Covered
 
 # Schedule
 
+Donostia - San Sebastian, 26-28 August 2019
+
 ||Monday 26th|Tuesday 27th|Wednesday 28th|
 |9:00 - 10:00|Wang|Melko|Melko|
 |10:00 - 11:30|Wang|Kim|Ringel|
