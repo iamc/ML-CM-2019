@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Schedule
-subtitle: Timetable and Materials Covered
+title: Programme
+subtitle: Schedule and Materials Covered
 ---
 
-- [Timetable](#timetable)
+- [Schedule](#schedule)
 - [Materials Covered](#materials-covered)
   - [Lei Wang](#lei-wang)
   - [Eun-Ah Kim](#eun-ah-kim)
@@ -12,7 +12,7 @@ subtitle: Timetable and Materials Covered
   - [Zohar Ringel](#zohar-ringel)
 
 
-# Timetable
+# Schedule
 
 ||Monday 26th|Tuesday 27th|Wednesday 28th|
 |9:00 - 10:00|Wang|Melko|Melko|
