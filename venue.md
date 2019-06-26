@@ -16,4 +16,7 @@ During its short life, the DIPC Foundation has become an international point of 
 
  Get directions with [OpenStreetMap](https://www.openstreetmap.org/?mlat=43.305946&amp;mlon=-2.010761&amp;zoom=16) or [Google Maps](https://maps.google.com/maps?q=43.305946,-2.010761).
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.3943748746565!2d-2.013029684209187!3d43.306003079134776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51b073976e29a9%3A0x72c7d697ecb1d5f0!2sDonostia+International+Physics+Center!5e0!3m2!1sen!2ses!4v1561460654478!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe width="600" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-2.0211097051923614%2C43.30048307924818%2C-2.0002313902204376%2C43.310710820105015&amp;layer=mapnik&amp;marker=43.30559716477891%2C-2.010670547706468" style="border: 1px solid black"></iframe>
+
+[View Larger Map](https://www.openstreetmap.org/?mlat=43.3056&amp;mlon=-2.0107#map=16/43.3056/-2.0107)
+
