@@ -14,7 +14,7 @@ title: Speakers
 > **Topics:** Deep learning theory, Generative models for physicists, Differentiable programming, Representation Learning. Examples to be covered: computation graph, automatic differentiation, variational inference, inverse Hamiltonian design. Applications of deep learning to statistical and quantum many-body physics. 
 
 
-[![Roger Melko](img/roger.jpg)](http://www.science.uwaterloo.ca/~rgmelko/) [**Roger Melko**](http://www.science.uwaterloo.ca/~rgmelko/) – University of Waterloo, Canada
+[![Roger Melko](img/roger.jpg)](http://www.science.uwaterloo.ca/~rgmelko/) [**Roger Melko**](http://www.science.uwaterloo.ca/~rgmelko/) – Perimeter Institute and the University of Waterloo, Canada
 
 > **Topics:** Lattice models for statistical physics, Monte Carlo methods, supervised and unsupervised learning, neural networks, Boltzmann machines, and deep learning. 
 
