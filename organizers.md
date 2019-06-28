@@ -7,7 +7,7 @@ title: Organizers
 
 **Fernando de Juan** – [Donostia International Physics Center](http://dipc.ehu.es/) and [Ikerbasque](https://www.ikerbasque.net/en), Donostia – San Sebastian, Spain
 
-**Reyes Calvo** – [Nanogune](https://www.nanogune.eu/) and [Ikerbasque](http://www.ikerbasque.net/en), Donostia – San Sebastian, Spain
+[**Reyes Calvo**](https://sites.google.com/view/rcalvoresearch) – [Nanogune](https://www.nanogune.eu/) and [Ikerbasque](http://www.ikerbasque.net/en), Donostia – San Sebastian, Spain
 
 [**Adolfo G. Grushin**](http://perso.neel.cnrs.fr/adolfo.grushin/) – [Institut Néel](http://neel.cnrs.fr/), Grenoble, France
 
