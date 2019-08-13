@@ -59,6 +59,12 @@ I will distribute applications of deep learning to statistical and quantum many-
 
 Lattice models for statistical physics, Monte Carlo methods, supervised and unsupervised learning, neural networks, Boltzmann machines, and deep learning. 
 
+1. Statistical methods for Many-Body physics, Monte Carlo
+2. Restricted Boltzmann Machines 1
+3. Restricted Boltzmann Machines 2
+4. Quantum state reconstruction 1
+5. Quantum state reconstruction 2
+
 
 ## Zohar Ringel
 
