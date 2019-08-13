@@ -57,13 +57,12 @@ I will distribute applications of deep learning to statistical and quantum many-
 
 ## Roger Melko
 
-Lattice models for statistical physics, Monte Carlo methods, supervised and unsupervised learning, neural networks, Boltzmann machines, and deep learning. 
+1. Lattice models for statistical physics, Monte Carlo method
+2. Supervised and unsupervised learning, generative modeling
+3. Restricted Boltzmann machines
+4. Quantum state reconstruction
 
-1. Statistical methods for Many-Body physics, Monte Carlo
-2. Restricted Boltzmann Machines 1
-3. Restricted Boltzmann Machines 2
-4. Quantum state reconstruction 1
-5. Quantum state reconstruction 2
+In these lectures we will focus on tying together the formalism of Markov chain Monte Carlo with stochastic neural networks used for generative modeling.  The goal will be a pedagogical development of a strategy to reconstruct the state of a quantum system given projective measurements on individual qubits.  Applications to current cold atom and trapped ion experiments will be discussed.
 
 
 ## Zohar Ringel
