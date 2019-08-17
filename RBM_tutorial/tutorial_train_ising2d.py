@@ -1,10 +1,10 @@
-########## Machine Learning for Quantum Matter and Technology  ######################
-### Juan Carrasquilla, Estelle Inack, Giacomo Torlai, Roger Melko
-### with dataset and code by Giacomo Torlai, Juan Carrasquilla and Lauren Hayward Sierens
+########## Machine Learning in Condensed Matter Physics ###############################
+###                     Roger Melko
+###   with dataset and code by 
+####  Giacomo Torlai, Juan Carrasquilla, Estelle Inack and Lauren Hayward Sierens
 ###
-### Tutorial 4: This code will train a Restricted Boltzmann Machine (RBM) to learn the
-### distribution of spin configurations of the two-dimensional Ising model at a
-### given temperature.
+### This code will train a Restricted Boltzmann Machine (RBM) to learn the distribution of 
+### spin configurations of the two-dimensional Ising model at a given temperature.
 #####################################################################################
 
 
