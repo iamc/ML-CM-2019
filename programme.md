@@ -30,8 +30,6 @@ Donostia - San Sebastian, 26-28 August 2019
 
 # Materials Covered
 
-{: .box-note}
-![Work in progress](img/wip-small.png) Work in progress. More detaills will be added as specific content is defined.
 
 ## Lei Wang
 
