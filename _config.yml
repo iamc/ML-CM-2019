@@ -25,7 +25,8 @@ navbar-links:
   News: "news"
   Resources:
     - Programme: "programme"
-      #  - Material: "material"
+    - Materials: "materials"
+    - Software setup: "software-setup"  
     - Venue: "venue"
     - Registration: "registration"
 
