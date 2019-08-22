@@ -6,7 +6,9 @@ subtitle: Donostia International Physics Center (DIPC)
 
 [![DIPC](../img/logo-dipc.png){: .center-image }](http://dipc.ehu.es)
 
-The course will be hosted and hold in the Donostia International Pysics Center - DIPC (see [location](#location) below), located in the [University of the Basque Country (UPV/EHU)](https://www.ehu.eus) Ibaeta campus in Donosta - San Sebastian.
+*(See exact location [below](#location))* 
+
+The course will be hosted and hold in the Donostia International Pysics Center - DIPC, located in the [University of the Basque Country (UPV/EHU)](https://www.ehu.eus) Ibaeta campus in Donosta - San Sebastian.
 
 The DIPC was created as an intellectual centre whose main aim is to promote and catalyse the development of basic research and basic research oriented towards material science to reach the highest level. Since its creation, the DIPC has been an open institution, linked to the University of the Basque Country, serving as a platform for the internationalising of basic science in the Basque Country in the field of materials.
 
