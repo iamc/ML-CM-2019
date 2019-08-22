@@ -1,0 +1,12 @@
+name: ML-School
+channels: 
+   - pytorch
+dependencies:
+   - ipython
+   - matplotlib
+   - tensorflow
+   - scikit-learn
+   - pytorch-cpu
+   - torchvision-cpu
+
+
