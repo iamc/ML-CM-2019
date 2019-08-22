@@ -1,4 +1,4 @@
 _site
 *~
-*.pyc 
+*.pyc
 __pycache__/

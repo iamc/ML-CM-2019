@@ -8,8 +8,7 @@
     * Solving the fastest descent problem with NeuralODE [`brachistochrone/`](brachistochrone)
     * Variational free energy with flow model: [`realnvp/`](realnvp)
 
-Have fun! 
+Have fun!
 
-## License 
-MIT License 
-
+## License
+MIT License

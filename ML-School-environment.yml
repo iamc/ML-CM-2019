@@ -1,5 +1,5 @@
 name: ML-School
-channels: 
+channels:
    - pytorch
 dependencies:
    - ipython
@@ -8,5 +8,3 @@ dependencies:
    - scikit-learn
    - pytorch-cpu
    - torchvision-cpu
-
-
