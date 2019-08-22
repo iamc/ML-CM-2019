@@ -272,12 +272,12 @@ The objective of this tutorial is to train a restricted Boltzmann machine (RBM) 
 of a 2D Ising model.  Once trained, you will sample new spin configurations from the RBM.
 You will compute thermodynamic observables from these samples and compare to known results (from Monte Carlo simulation).
 You will use and modify the Python programs 
-\texttt{rbm.py}, \texttt{tutorial4{\textunderscore}train{\textunderscore}ising2d.py} and 
-\texttt{tutorial4{\textunderscore}sample{\textunderscore}ising2d.py} %and \texttt{tutorial5{\textunderscore}plot{\textunderscore}results.py}.
+\texttt{rbm.py}, \texttt{tutorial{\textunderscore}train{\textunderscore}ising2d.py} and 
+\texttt{tutorial{\textunderscore}sample{\textunderscore}ising2d.py} %and \texttt{tutorial5{\textunderscore}plot{\textunderscore}results.py}.
 
 As seen in the lectures, the architecture of a RBM can be represented as
 \begin{center}
-\includegraphics[width=4cm]{RBM.pdf}
+\includegraphics[width=3cm]{RBM.pdf}
 \end{center}
 where $\mathbf{v} = \left(v_1, v_2, \ldots v_m\right)^T$ consists of $m$ visible units with $v_i \in \{0,1\}$ and $\mathbf{h} = \left(h_1, h_2, \ldots h_n\right)^T$ consists of $n$ hidden units with $h_j \in \{0,1\}$.
 The weights of the RBM are denoted as $W_{ij}$. 
@@ -324,7 +324,7 @@ C_v(\mathbf{v}) &= \frac{\langle E^2 \rangle - \langle E \rangle^2}{T^2}, \\
 \end{align*}
 When calculating these observables for a given spin configuration $\mathbf{v} = (v_1, v_2, \ldots, v_N)$, we note that the underlying lattice has periodic boundary conditions and uses a labelling for the sites such that, for example, on a $3\times 3$ lattice:
 \begin{center}
-\includegraphics[width=5cm]{lattice.pdf}
+\includegraphics[width=3.5cm]{lattice.pdf}
 \end{center}
 We will compare the averages of our RBM-sampled observables to the known values we expect to find in Monte Carlo simulation.
 We will also explore how the number of hidden units $n$ affects this comparison.
@@ -335,7 +335,7 @@ We will also explore how the number of hidden units $n$ affects this comparison.
 \begin{enumerate}[label=\alph*)]
 
 %%%%%%%%%%%%%% (a) %%%%%%%%%%%%%%
-\item Start by examining Figure 4 of Reference~\cite{giac}. How do the thermodynamic observables generated from the RBM depend on the number of hidden units $n = n_h$? How does the accuracy of each observables vary with the distance from the critical temperature $T_\text{c}$? 
+\item Start by examining Figure 1 at the end of this document. How do the thermodynamic observables generated from the RBM depend on the number of hidden units $n = n_h$? How does the accuracy of each observables vary with the distance from the critical temperature $T_\text{c}$? 
 
 %%% SOLUTION %%%
 \soln{
@@ -359,7 +359,8 @@ Increase the parameter \texttt{nsteps} until you are convinced that the NLL has 
 }
 
 %%%%%%%%%%%%%% (c) %%%%%%%%%%%%%%
-\item Examine the parameters \texttt{learning{\textunderscore}rate{\textunderscore}start}, \texttt{bsize}, \texttt{num{\textunderscore}gibbs} and  \texttt{num{\textunderscore}samples} and explain how each are used to train the RBM.
+\item Examine the parameters \texttt{learning{\textunderscore}rate{\textunderscore}start}, \texttt{bsize}, \texttt{num{\textunderscore}gibbs} and  \texttt{num{\textunderscore}samples} and 
+understand how each are used to train the RBM.
 Experiment with adjusting each of these parameters to see how it affects the training behaviour.
 
 %%% SOLUTION %%%
@@ -376,7 +377,7 @@ This program will also save the sample configurations to a file within the folde
 \soln{
 }
 
-\begin{table*}[t]
+\begin{table*}[b]
 \begin{center}
 \begin{tabular}{ | c | c | c | c | c |  }
 \hline
@@ -401,18 +402,18 @@ This program will also save the sample configurations to a file within the folde
 %and compare with known results from Monte Carlo.
 \item Write code that reads in the sampled configurations generated in part d) and calculates the corresponding observables $\langle E \rangle /N $, $\langle M \rangle /N $, $C_v /N $ and $\chi /N $.
 Compare with the results for the training samples, which are provided in Table~\ref{tab}.
-Are your discrepancies similar to those found in Figure 4 of Reference~\cite{giac}?
+Are your discrepancies similar to those found in Figure 1?
 
 \hint{In order to check if your code is working, you can try calculating the observable quantities for the training configurations in the folder \texttt{MC{\textunderscore}results} and verifying that you get the same results as in Table~\ref{tab}.}
 
 %%%%%%%%%%%%%% (f) %%%%%%%%%%%%%%
 \item Repeat parts b), d) and e) for other values of the number of hidden units $n$.
-Once again consider how your results compare with Figure 4 of Reference~\cite{giac}.
+Once again consider how your results compare with Figure 1.
 
 %%%%%%%%%%%%%% (g) %%%%%%%%%%%%%%
 \item Repeat parts b), d), e) and f) for temperatures above and below the critical temperature, such as the ones provided in Table~\ref{tab}.
 How does the difference between your sampled and trained observables depend on temperature?
-Once again examine how your results compare with Figure 4 of Reference~\cite{giac}.
+Once again examine how your results compare with Figure 1.
 
 %%% SOLUTION %%%
 \soln{
@@ -421,11 +422,17 @@ Once again examine how your results compare with Figure 4 of Reference~\cite{gia
 
 \end{enumerate}
 
-\begin{thebibliography}{}
+\begin{figure*}[ht]
+\centering
+\includegraphics[width=135mm]{observables}
+\caption{Comparison of the observables generated with the Boltzmann machine with the exact values calculated from the data set
+(black) for a $d=2$ Ising system with $N=64$ spins.  See   {https://arxiv.org/abs/1606.02718}. }
+\label{observables}
+\end{figure*}
 
-\bibitem{giac} 
-G. Torlai and R. Melko, Phys. Rev. B \textbf{94}, 165134 (2016), {\small\url{https://arxiv.org/abs/1606.02718}}.
-
-\end{thebibliography}
+%\begin{thebibliography}{}
+%\bibitem{giac} 
+%G. Torlai and R. Melko, Phys. Rev. B \textbf{94}, 165134 (2016), {\small\url{https://arxiv.org/abs/1606.02718}}.
+%\end{thebibliography}
 
 \end{document}
