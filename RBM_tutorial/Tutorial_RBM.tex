@@ -261,8 +261,8 @@
 
 \vspace{-3cm}
 
-\opt{nosoln}{\title{Tutorial: \\Learning classical thermodynamic observables with \\restricted Boltzmann machines \vspace*{-6mm}}}
-\opt{soln}{\title{Tutorial \textcolor{JungleGreen}{Solutions}: \\Learning classical thermodynamic observables with \\restricted Boltzmann machines \vspace*{-6mm}}}
+\opt{nosoln}{\title{Tutorial: \\Learning thermodynamic observables with \\restricted Boltzmann machines \vspace*{-6mm}}}
+\opt{soln}{\title{Tutorial \textcolor{JungleGreen}{Solutions}: \\Learning thermodynamic observables with \\restricted Boltzmann machines \vspace*{-6mm}}}
 
 \date{August 30, 2019}
 
@@ -404,11 +404,14 @@ This program will also save the sample configurations to a file within the folde
 Compare with the results for the training samples, which are provided in Table~\ref{tab}.
 Are your discrepancies similar to those found in Figure 1?
 
-\hint{In order to check if your code is working, you can try calculating the observable quantities for the training configurations in the folder \texttt{MC{\textunderscore}results} and verifying that you get the same results as in Table~\ref{tab}.}
+\hint{In order to check if your code is working, you can try calculating the observable quantities for the training configurations in the folder \texttt{MC{\textunderscore}results} 
+to varify that you get the same results as in Table~\ref{tab}.}
 
 %%%%%%%%%%%%%% (f) %%%%%%%%%%%%%%
 \item Repeat parts b), d) and e) for other values of the number of hidden units $n$.
 Once again consider how your results compare with Figure 1.
+
+\note{The exact (log) partition function requires a trace over all hidden units, which becomes intractable for some number of hidden units.  Currently \texttt{max{\textunderscore}feasible{\textunderscore}for{\textunderscore}log{\textunderscore}pf} is set to $n_h=24$.  For larger number of hidden units, you will need to disable this calculation (and the plotting) in  \texttt{tutorial{\textunderscore}train{\textunderscore}ising2d.py} .}
 
 %%%%%%%%%%%%%% (g) %%%%%%%%%%%%%%
 \item Repeat parts b), d), e) and f) for temperatures above and below the critical temperature, such as the ones provided in Table~\ref{tab}.
