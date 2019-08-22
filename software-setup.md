@@ -21,7 +21,7 @@ and their installation is very easy using [Anaconda Python Distribution](https:/
 {: .box-note}
 ![Work in progress](img/warn.png) Please bring all the software pre-installed to the School. The download size is ~1GB and we will collapse the WiFi connection if everybody tries to install it on arrival.
 
-If you are experienced using Anaconda you can use the following [ML-School-environment.yml]({{ site.url }}/ML-School-environment.yml) environment file.
+If you are experienced using Anaconda you can use the following [ML-School-environment.yml](https://raw.githubusercontent.com/iamc/ML-CM-2019/master/ML-School-environment.yml) environment file.
 
 
 # Anaconda Installation
@@ -54,7 +54,7 @@ For more information about TensorFlow installation (eg. GPU enabled versions) se
 
 # Alternative installation in a new conda environment
 
-Alternatively, we can install eveything inside a new conda environment using the provided [ML-School-environment.yml]({{ site.url }}/ML-School-environment.yml) environment file. This will create a new environment named `ML-School` and install all the requiered software within it. Just download the [file]({{ site.url }}/ML-School-environment.yml) and:
+Alternatively, we can install eveything inside a new conda environment using the provided [ML-School-environment.yml](https://raw.githubusercontent.com/iamc/ML-CM-2019/master/ML-School-environment.yml) environment file. This will create a new environment named `ML-School` and install all the requiered software within it. Just download the [file](https://raw.githubusercontent.com/iamc/ML-CM-2019/master/ML-School-environment.yml) and:
 
     conda env create -f ML-School-environment.yml 
 
