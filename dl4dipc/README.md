@@ -4,7 +4,7 @@
 * Demo codes
     * Poor man's computation graph: [`computation_graph.py`](computation_graph.py)
     * Hamiltonian inverse design with reverse mode AD: [`schrodinger.py`](schrodinger.py)
-    * Counting dimers with variational tensor network: [`dimer.py`](schrodinger.py)
+    * Counting dimers with variational tensor network: [`dimer.py`](dimer.py)
     * Solving the fastest descent problem with NeuralODE [`brachistochrone/`](brachistochrone)
     * Variational free energy with flow model: [`realnvp/`](realnvp)
 
