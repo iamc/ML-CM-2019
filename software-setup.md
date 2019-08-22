@@ -33,7 +33,7 @@ Once you have Anaconda installed, open a terminal (or an `Anaconda Prompt` from 
 
 # Global Anaconda installation
 
-Here we will install all the sofware so that it can be used everythime you use Anaconda Python in this computer. See below for installation into a conda environent.
+Here we will install all the sofware so that it can be used everytime you use Anaconda Python in this computer. See below for installation into a conda environent.
 
 
 ### PyTorch
