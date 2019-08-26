@@ -1,11 +1,10 @@
+import matplotlib.pyplot as plt
+import numpy as np
 import torch
 import torch.nn as nn
 
-import numpy as np
-import matplotlib.pyplot as plt
-
-from realnvp import NVPNet
 import objectives
+from realnvp import NVPNet
 
 if __name__ == "__main__":
     import argparse

@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+import numpy as np
 import torch
 import torch.nn as nn
 
@@ -45,7 +47,6 @@ class Schrodinger1D(nn.Module):
 
 
 if __name__ == "__main__":
-    import numpy as np
 
     # prepare mesh and target
     xmin = -1
@@ -70,7 +71,6 @@ if __name__ == "__main__":
         loss.backward()
         return loss
 
-    import matplotlib.pyplot as plt
 
     plt.ion()
     for epoch in range(50):

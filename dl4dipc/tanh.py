@@ -2,8 +2,8 @@
 Follows HIPS autograd https://github.com/HIPS/autograd/blob/master/examples/tanh.py
 """
 
-import torch
 import matplotlib.pyplot as plt
+import torch
 
 x = torch.linspace(-7, 7, 100, requires_grad=True)
 

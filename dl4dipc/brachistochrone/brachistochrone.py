@@ -1,11 +1,11 @@
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-import numpy as np
 
-from torchdiffeq import odeint_adjoint as odeint
 from exact_solver import solver
+from torchdiffeq import odeint_adjoint as odeint
 
 
 class MLP(nn.Module):
