@@ -11,14 +11,12 @@ class Schrodinger1D(nn.Module):
 
         nmesh = xmesh.shape[0]
         h2 = (xmesh[1] - xmesh[0]) ** 2
+        hop = 0.5 / h2 * torch.ones(nmesh - 1, dtype=xmesh.dtype)
+        onsite = 1 / h2 * torch.ones(nmesh, dtype=xmesh.dtype)
         self.K = (
-            torch.diag(1 / h2 * torch.ones(nmesh, dtype=xmesh.dtype), diagonal=0)
-            - torch.diag(
-                0.5 / h2 * torch.ones(nmesh - 1, dtype=xmesh.dtype), diagonal=1
-            )
-            - torch.diag(
-                0.5 / h2 * torch.ones(nmesh - 1, dtype=xmesh.dtype), diagonal=-1
-            )
+            torch.diag(onsite, diagonal=0)
+            - torch.diag(hop, diagonal=1)
+            - torch.diag(hop, diagonal=-1)
         )
 
     def _solve(self):
