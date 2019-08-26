@@ -1,6 +1,7 @@
 name: ML-School
 channels: 
    - pytorch
+   - conda-forge
 dependencies:
    - ipython
    - matplotlib
@@ -8,5 +9,4 @@ dependencies:
    - scikit-learn
    - pytorch-cpu
    - torchvision-cpu
-
-
+   - notebook
