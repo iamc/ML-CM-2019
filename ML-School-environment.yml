@@ -10,3 +10,4 @@ dependencies:
    - pytorch-cpu
    - torchvision-cpu
    - notebook
+   - ipywidgets
