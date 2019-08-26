@@ -3,6 +3,8 @@ channels:
    - pytorch
 dependencies:
    - ipython
+   - ipywidgets
+   - jupyter
    - matplotlib
    - tensorflow
    - scikit-learn
