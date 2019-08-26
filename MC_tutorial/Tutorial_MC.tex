@@ -1,0 +1,341 @@
+\documentclass[letterpaper]{scrartcl}	
+\usepackage[top=0.88in, bottom=1in, left=1in, right=1in]{geometry}
+
+\makeatletter
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\makeatother
+
+\usepackage{scalefnt}
+
+
+%--------------------------------------------------------------
+% We need this package, part of the KOMA class, for the custom
+% headings.
+%--------------------------------------------------------------
+\usepackage{scrpage2}	
+		
+
+%--------------------------------------------------------------
+% One of many packages you can use if you want to include
+% graphics.
+%--------------------------------------------------------------
+\usepackage{graphicx}			
+
+%--------------------------------------------------------------
+% The AMS packages are useful but not required. They offer a
+% number of nice fonts, environments for formatting multiline
+% equations, etc.
+%--------------------------------------------------------------
+\usepackage{amsmath}			
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+%--------------------------------------------------------------
+% Basic way to set-up the page margins.
+%--------------------------------------------------------------
+%\addtolength{\oddsidemargin}{-.2in}
+%\addtolength{\evensidemargin}{-.2in}
+%\addtolength{\textwidth}{0.45in}
+%\addtolength{\topmargin}{-.175in}
+%\addtolength{\textheight}{0.75in}
+
+%--------------------------------------------------------------
+% Comment out the following to add indents and remove space between paragraphs.
+%--------------------------------------------------------------
+\usepackage{parskip}
+
+%--------------------------------------------------------------
+% This package is used to define custom colours.
+%--------------------------------------------------------------
+\usepackage{xcolor}
+
+%--------------------------------------------------------------
+% A few colours for hyperlinks.
+%--------------------------------------------------------------
+\definecolor{plum}{rgb}{0.36078, 0.20784, 0.4}
+\definecolor{chameleon}{rgb}{0.30588, 0.60392, 0.023529}
+\definecolor{cornflower}{rgb}{0.12549, 0.29020, 0.52941}
+\definecolor{scarlet}{rgb}{0.8, 0, 0}
+\definecolor{brick}{rgb}{0.64314, 0, 0}
+
+%--------------------------------------------------------------
+% A command for typesetting and linking an email address.
+%--------------------------------------------------------------
+\newcommand{\email}[1]{\href{mailto:#1}{\tt \textcolor{cornflower}{#1}}}
+\newcommand{\web}[1]{\href{#1}{\tt \textcolor{cornflower}{#1}}}
+
+%--------------------------------------------------------------
+%  The following declaration includes the hyperref package and
+% assigns metadata. If you compile with pdflatex, this data
+% will be automatically included in the pdf file.
+%--------------------------------------------------------------
+%\usepackage[
+%	pdftitle={QFT Tutorial 1},%
+%	pdfauthor={PSI Tutors},%
+%	pdfsubject={QFT Tutorial 1},%
+%	pdfkeywords={PSI},
+%	colorlinks=true,
+%	linkcolor=cornflower,
+%	citecolor=scarlet,
+%	urlcolor=chameleon%
+%]{hyperref}
+
+%\setcounter{secnumdepth}{2}	% section number depth
+%\setcounter{tocdepth}{2}		% depth of TOC
+
+%--------------------------------------------------------------
+% Specify the font used in captions.
+%--------------------------------------------------------------
+\setkomafont{captionlabel}{\usekomafont{descriptionlabel}}
+
+%--------------------------------------------------------------
+% This is where we define the custom title. The image that is
+% placed on the left-hand-side of the title, PILogo.pdf in
+% this case, should be in the same directory as this file. Note
+% that you can always use hyperlinks for the Title, Semester,
+% and Author fields, below, in case you want to link to a seminar
+% web page or a lecturer's email address.
+%--------------------------------------------------------------
+
+\titlehead{%
+	\vspace*{-1cm}
+	\begin{minipage}[b]{4.0cm}
+	\includegraphics*[height=1.3cm]{avatar-icon.png}%
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{12cm}
+	\begin{flushright}
+		\usekomafont{descriptionlabel}
+		\large Machine Learning in Condensed Matter Physics \\
+		\normalsize \normalfont
+		Donostia - San Sebastian, 26-28 August 2019 \hspace{1cm} Roger G. Melko
+	\end{flushright}
+	\end{minipage}
+	\\[-3mm]
+	\hrule
+	\vspace{-3mm}
+}
+% -----------
+
+%--------------------------------------------------------------
+% Other useful physic-related packages
+%--------------------------------------------------------------
+\usepackage{braket}  
+% Use \Bra{}, \Ket{} or \Braket{x | \psi} for Dirac notation
+
+%--------------------------------------------------------------
+% Nice numbering for question parts.
+%--------------------------------------------------------------
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ba}{\begin{eqnarray}}
+\newcommand{\ea}{\end{eqnarray}}
+
+\newcommand{\ssk}{\smallskip}
+
+\newcommand{\msk}{\medskip}
+
+\newcommand{\nin}{\noindent}
+
+\newcommand{\beq}{\begin{equation}}
+
+\newcommand{\eeq}{\end{equation}}
+
+\renewcommand{\vec}[1]{{\mathbf{#1}}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumiii}{\roman{enumiii})}
+
+%%%%%%%%%%%%%
+
+\def\be{\begin{eqnarray}}
+\def\ee{\end{eqnarray}}
+\newcommand{\nn}{\nonumber}
+\newcommand\para{\paragraph{}}
+\newcommand{\ft}[2]{{\textstyle\frac{#1}{#2}}}
+\newcommand{\eqn}[1]{(\ref{#1})}
+\newcommand{\pl}[1]{\frac{\partial {\cal L}}{\partial{#1}}}
+\newcommand{\ppp}[2]{\frac{\partial {#1}}{\partial {#2}}}
+\newcommand{\ph}[1]{\frac{\partial {\cal H}}{\partial{#1}}}
+\newcommand{\leftp}[3]{\left.\ppp{#1}{#2}\right|_{#3}}
+%\newcommand{\Vec}[2]{\left(\begin{array}{c} {#1} \\ {#2}\end{array}\right)}
+\newcommand\vx{\vec{x}}
+\newcommand\vy{\vec{y}}
+\newcommand\vp{\vec{p}}
+\newcommand\vq{\vec{q}}
+\newcommand\vk{\vec{k}}
+\newcommand\avp{a^{\ }_{\vp}}
+\newcommand\advp{a^\dagger_{\vp}}
+\newcommand\ad{a^\dagger}
+
+\newcommand\balpha{\mbox{\boldmath $\alpha$}}
+\newcommand\bbeta{\mbox{\boldmath $\beta$}}
+\newcommand\bgamma{\mbox{\boldmath $\gamma$}}
+\newcommand\bomega{\mbox{\boldmath $\omega$}}
+\newcommand\blambda{\mbox{\boldmath $\lambda$}}
+\newcommand\bmu{\mbox{\boldmath $\mu$}}
+\newcommand\bphi{\mbox{\boldmath $\phi$}}
+\newcommand\bzeta{\mbox{\boldmath $\zeta$}}
+\newcommand\bsigma{\mbox{\boldmath $\sigma$}}
+\newcommand\bepsilon{\mbox{\boldmath $\epsilon$}}
+\newcommand\btau{\mbox{\boldmath $\tau$}}
+\newcommand\beeta{\mbox{\boldmath $\eta$}}
+\newcommand\btheta{\mbox{\boldmath $\theta$}}
+
+\def\norm#1{:\!\!#1\!\!:}
+
+\def\part{\partial}
+
+\def\dbox{\hbox{{$\sqcup$}\llap{$\sqcap$}}}
+
+\def\sla#1{\hbox{{$#1$}\llap{$/$}}}
+\def\Dslash{\,\,{\raise.15ex\hbox{/}\mkern-13mu D}}
+\def\Dbarslash{\,\,{\raise.15ex\hbox{/}\mkern-12mu {\bar D}}}
+\def\delslash{\,\,{\raise.15ex\hbox{/}\mkern-10mu \partial}}
+\def\delbarslash{\,\,{\raise.15ex\hbox{/}\mkern-9mu {\bar\partial}}}
+\def\pslash{\,\,{\raise.15ex\hbox{/}\mkern-11mu p}}
+\def\qslash{\,\,{\raise.15ex\hbox{/}\mkern-9mu q}}
+\def\kslash{\,\,{\raise.15ex\hbox{/}\mkern-11mu k}}
+\def\eslash{\,\,{\raise.15ex\hbox{/}\mkern-9mu \epsilon}}
+\def\calDslash{\,\,{\rais.15ex\hbox{/}\mkern-12mu {\cal D}}}
+\newcommand{\slsh}[1]{\,\,{\raise.15ex\hbox{/}\mkern-12mu {#1}}}
+
+
+\newcommand\Bprime{B${}^\prime$}
+\newcommand{\sign}{{\rm sign}}
+
+\newcommand\bx{{\bf x}}
+\newcommand\br{{\bf r}}
+\newcommand\bF{{\bf F}}
+\newcommand\bp{{\bf p}}
+\newcommand\bL{{\bf L}}
+\newcommand\bR{{\bf R}}
+\newcommand\bP{{\bf P}}
+\newcommand\bE{{\bf E}}
+\newcommand\bB{{\bf B}}
+\newcommand\bA{{\bf A}}
+\newcommand\bee{{\bf e}}
+\newcommand\bte{\tilde{\bf e}}
+\def\ket#1{\left| #1 \right\rangle}
+\def\bra#1{\left\langle #1 \right|}
+\def\vev#1{\left\langle #1 \right\rangle}
+
+\newcommand\lmn[2]{\Lambda^{#1}_{\ #2}}
+\newcommand\mup[2]{\eta^{#1 #2}}
+\newcommand\mdown[2]{\eta_{#1 #2}}
+\newcommand\deld[2]{\delta^{#1}_{#2}}
+\newcommand\df{\Delta_F}
+\newcommand\cL{{\cal L}}
+%\def\theequation{\thesection.\arabic{equation}
+%%%%%%%%%
+
+%\renewcommand{\ttdefault}{pcr}
+
+\usepackage{enumitem}
+
+\begin{document}
+
+%\scalefont{1.35}
+
+\title{Tutorial: \\ Monte Carlo Simulation of the 2D Ising Model}
+
+\date{August 26, 2019}
+
+
+\maketitle
+
+
+In this tutorial, we will study the phase transition in the classical two-dimensional Ising model, with Hamiltonian
+\begin{equation*}
+H = -J \sum_{\langle ij \rangle} \sigma_i \sigma_j, 
+\end{equation*}
+where $\sigma_i = \pm 1$, $J$ is the coupling strength and $\sum_{\langle ij \rangle}$ denotes a sum over nearest neighbours.
+We will consider simulations on a square lattice with periodic boundaries.
+In the thermodynamic limit, the critical temperature is known to be ${ T_\text{c} }/{J} \approx 2.269$.
+
+We will use and modify the two Python programs \texttt{ising{\textunderscore}mc.py} and \texttt{plot{\textunderscore}ising.py} throughout this tutorial 
+in order to implement Monte Carlo (MC) methods that estimate $T_\text{c}$ and compare with this known exact solution.
+%The program \texttt{plot{\textunderscore}ising.py} reads in these measurements and plots observable quantities as a function of temperature $T$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Q1 %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Monte Carlo algorithm}
+Consider the Monte Carlo program \texttt{ising{\textunderscore}mc.py}, which is designed to perform a Monte Carlo simulation (using the single-spin-flip Metropolis algorithm) and record measurements of the system's energy $E$ and magnetization $M$. 
+
+\begin{enumerate}[label=\alph*)]
+
+%%%%%%%%%%%%%% (a) %%%%%%%%%%%%%%
+\item Examine the section of the code that computes the two-dimensional \texttt{neighbours} array, which is used when calculating the system's energy. 
+The code is already written such that \texttt{neighbours[i,0]} and \texttt{neighbours[i,1]} 
+store the lattice location of spin \texttt{i}'s rightward and upward neighbours, respectively.
+Modify the code such that it will also store spin \texttt{i}'s leftward neighbour in \texttt{neighbours[i,2]} and its downward neighbour in \texttt{neighbours[i,3]}.
+
+\textbf{Hint:} Don't forget to consider the periodic boundary conditions.
+
+%%%%%%%%%%%%%% (b) %%%%%%%%%%%%%%
+\item Examine the \texttt{sweep()} function, which proposes a number \texttt{N{\textunderscore}spins} single spin-flip Monte Carlo updates.
+Convince yourself that this code is implementing the single-spin-flip Metropolis algorithm.
+
+%%%%%%%%%%%%%% (c) %%%%%%%%%%%%%%
+\item Implement a more efficient way of calculating the energy difference \texttt{deltaE} within the \texttt{sweep()} function. 
+The given implementation calculates this energy difference by using the \texttt{getEnergy()} function, 
+which involves iterating a loop \texttt{N{\textunderscore}spins} times.
+However, you should be able to calculate \texttt{deltaE} by summing only four terms.
+
+%\textbf{Hint:} To appreciate the difference in time required for these two different implementations, 
+%set \texttt{animate = False} and increase the linear size \texttt{L} when you run the two versions of the code.
+
+%%%%%%%%%%%%%%% (d) %%%%%%%%%%%%%%
+%\item Run the code for various values of \texttt{L}, \texttt{J}, \texttt{n{\textunderscore}eqSweeps} and \texttt{n{\textunderscore}measSweeps} 
+%and explain how each of these parameters affects the resulting animated samples.
+
+%%%%%%%%%%%%%% (e) %%%%%%%%%%%%%%
+\item Run your code with % \texttt{L=4}, \texttt{J=1}, \texttt{T{\textunderscore}list = np.linspace(5.0,0.5,10)}, 
+\texttt{n{\textunderscore}eqSweeps=1000} and \texttt{n{\textunderscore}measSweeps=10000}.
+The code will generate files in a directory called \texttt{Data} that will store the energy and magnetization 
+corresponding to each of your sampled system configurations.
+(In Question 2, we will analyze and plot the resulting data.)
+
+\textbf{Hint:} Set \texttt{animate = False} for this part so that the code runs faster.
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Q2 %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Estimating the critical temperature}
+
+Recall from lecture that the specific heat $C_V$ and susceptibility $\chi$ can be expressed as 
+\begin{equation*}
+C_V = \frac{\langle E^2 \rangle - \langle E \rangle^2}{T^2} \, , \qquad \qquad
+\chi = \frac{\langle M^2 \rangle - \langle M \rangle^2}{T},
+\end{equation*}
+where $E$ is the energy and $M = \sum_i \sigma_i$ is the magnetization.
+For our Monte Carlo calculations on finite lattices, there is no spontaneous symmetry breaking and therefore $\langle M \rangle = 0$ at all $T$. 
+As a result, we instead examine $\langle | M | \rangle$ and calculate the susceptibility as
+\begin{equation*}
+\chi = \frac{\langle M^2 \rangle - \langle | M | \rangle^2}{T}.
+\end{equation*}
+
+The quantities $C_V/N$ versus $T$ and $\chi/N$ versus $T$ both diverge at the critical temperature $T_\text{c}$ in the thermodynamic limit $N \to \infty$.
+On a finite lattice, these quantities do not diverge but will acquire peaks near $T_\text{c}$. 
+
+\begin{enumerate}[label=\alph*)]
+
+%%%%%%%%%%%%%% (a) %%%%%%%%%%%%%%
+\item Use the code \texttt{plot{\textunderscore}ising.py} to read in the Monte Carlo data from Question 1e 
+and plot the estimators for $\langle E \rangle/N$ and $\langle | M | \rangle/N$.
+Consider the values you find for these estimators in the limit of small $T$; do they match your theoretical expectations?
+
+%%%%%%%%%%%%%% (b) %%%%%%%%%%%%%%
+\item Modify \texttt{plot{\textunderscore}ising.py} to calculate $C_V$ and $\chi$. 
+Plot $C_V/N$ and $\chi/N$ versus $T$ and verify that there are peaks in these quantities near $T_\text{c}$.
+
+%%%%%%%%%%%%%% (c) %%%%%%%%%%%%%%
+\item Use \texttt{ising{\textunderscore}mc.py} to generate additional data for higher $L$ and for more temperatures close to $T_\text{c}$. 
+Modify \texttt{plot{\textunderscore}ising.py} to plot your results for several different values of $L$ and confirm that the peaks in $C_V/N$ and $\chi/N$
+get closer to $T_\text{c}$ as $L$ increases.
+
+\end{enumerate}
+\end{document}
