@@ -88,7 +88,8 @@ cost      = rbm.neg_log_likelihood_forGrad(placeholders.visible_samples, num_gib
 optimizer = tf.train.AdamOptimizer(learning_rate, epsilon=1e-2)
 ops.lr    = learning_rate
 ops.train = optimizer.minimize(cost, global_step=ops.global_step)
-ops.init  = tf.group(tf.initialize_all_variables(), tf.initialize_local_variables())
+#ops.init  = tf.group(tf.initialize_all_variables(), tf.initialize_local_variables()) #depricated
+ops.init  = tf.group(tf.global_variables_initializer(), tf.local_variables_initializer())
 
 # Define the negative log-likelihood
 # We can use this to plot the RBM's training progress.

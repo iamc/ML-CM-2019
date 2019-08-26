@@ -145,7 +145,7 @@ class RBM(object):
             with tf.name_scope('second_term'):
                 second_term = tf.matmul(self.weights, self.all_hidden_states, transpose_b=True)
                 second_term = tf.nn.softplus(tf.add(self.visible_bias, second_term))
-                second_term = tf.transpose(tf.reduce_sum(second_term, reduction_indices=[0], keep_dims=True))
+                second_term = tf.transpose(tf.reduce_sum(second_term, reduction_indices=[0], keepdims=True))
             exponent = tf.cast(first_term + second_term, dtype=tf.float64, name='exponent')
             #exponent_mean = tf.reduce_mean(exponent)
             exponent_mean = tf.reduce_max(exponent)
