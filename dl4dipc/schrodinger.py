@@ -51,7 +51,7 @@ if __name__=='__main__':
     target = torch.from_numpy(target)
 
     model = Schrodinger1D(xmesh)
-    optimizer = torch.optim.LBFGS(model.parameters(), max_iter=10)
+    optimizer = torch.optim.LBFGS(model.parameters(), max_iter=10, tolerance_grad=1e-7)
 
     def closure():
         optimizer.zero_grad()
