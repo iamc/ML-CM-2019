@@ -12,6 +12,6 @@ You can find the materials for the different tutorials here:
 > ⚠️ **MacOS OMP error**: Should you be using MacOS and getting an error like:
 >
 >  OMP: Error #15: Initializing libiomp5.dylib, but found libiomp5.dylib already initialized.
->  OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. 
+>  OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program...
 >
-> Check first answer [here](https://stackoverflow.com/questions/53014306/error-15-initializing-libiomp5-dylib-but-found-libiomp5-dylib-already-initial)
+> check first answer [here](https://stackoverflow.com/questions/53014306/error-15-initializing-libiomp5-dylib-but-found-libiomp5-dylib-already-initial)
