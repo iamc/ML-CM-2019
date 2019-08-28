@@ -1,10 +1,9 @@
 '''
-this is only for a illustrative purpose, see this paper for a serious study
+this is only for illustrative purpose, see this paper for a serious study
 https://journals.aps.org/pre/abstract/10.1103/PhysRevE.98.042145
 '''
 
 import torch 
-import matplotlib.pyplot as plt 
 torch.set_num_threads(1)
 torch.manual_seed(42)
 
