@@ -6,3 +6,5 @@ You can find the materials for the different tutorials here:
 
 * Roger Melko [RBM_tutorial](https://github.com/iamc/ML-CM-2019/tree/master/RBM_tutorial)
 * Lei Wang [dl4dipc](https://github.com/iamc/ML-CM-2019/tree/master/dl4dipc)
+* [Eun-Ah Kim](https://github.com/iamc/ML-CM-2019/tree/master/Eun-Ah_Kim)
+* [Zohar Ringel](https://github.com/iamc/ML-CM-2019/tree/master/Zohar_Ringel)
