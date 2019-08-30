@@ -16,9 +16,11 @@ Main repository for the Machine Learning in Condensed Matter Physics 2019 summer
 
 ## Tips
 
-> ⚠️ **MacOS OMP error**: Should you be using MacOS and getting an error like:
->
->  OMP: Error #15: Initializing libiomp5.dylib, but found libiomp5.dylib already initialized.
->  OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program...
->
-> check first answer [here](https://stackoverflow.com/questions/53014306/error-15-initializing-libiomp5-dylib-but-found-libiomp5-dylib-already-initial)
+### TensorFlow MacOS OMP error
+
+Should you be using MacOS and getting an error like:
+
+    OMP: Error #15: Initializing libiomp5.dylib, but found libiomp5.dylib already initialized.
+    OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program...
+
+check first answer [here](https://stackoverflow.com/questions/53014306/error-15-initializing-libiomp5-dylib-but-found-libiomp5-dylib-already-initial).
