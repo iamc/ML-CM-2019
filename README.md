@@ -1,5 +1,7 @@
 # Machine Learning in Condensed Matter Physics 2019
 
+[![School logo](ML-CM-2019-logo.png)](http://iamc.eu/ML-CM-2019) [http://iamc.eu/ML-CM-2019](http://iamc.eu/ML-CM-2019)
+
 Main repository for the Machine Learning in Condensed Matter Physics 2019 summer course (San Sebastian, 26-28 August 2019) organized by the Donostia International Physics Center (DIPC).
 
 You can find the code and lecture notes for the differen tracks here:
