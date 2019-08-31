@@ -9,7 +9,7 @@ Main repository for the Machine Learning in Condensed Matter Physics 2019 summer
 ## Lecture notes and code
 
 * Roger Melko: [`Roger_Melko/`](Roger_Melko)
-* Lei Wang: [`Lei Wang/`](Lei Wang)
+* Lei Wang: [`Lei Wang/`](Lei_Wang)
 * Eun-Ah Kim: [`Eun-Ah_Kim/`](Eun-Ah_Kim)
 * Zohar Ringel: [`Zohar_Ringel/`](Zohar_Ringel)
 
